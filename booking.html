@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotel Booking</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Book Your Stay</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="hotels.html">HOTELS</a></li>
+                <li><a href="booking.html">BOOKING</a></li>
+                <li><a href="contact.html">CONTACT</a></li>
+                <li><a href="login.html">LOGIN</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="booking-container">
+        <h2>Book Your Hotel</h2>
+        <form id="booking-form">
+            <label for="hotel">Select Hotel:</label>
+            <select id="hotel" name="hotel" required>
+                <option value="">-- Choose a Hotel --</option>
+                <option value="Hotel Udaipur Palace">Hotel Udaipur Palace</option>
+                <option value="Jaipur Heritage Hotel">Jaipur Heritage Hotel</option>
+                <option value="Jaisalmer Desert Camp">Jaisalmer Desert Camp</option>
+            </select>
+
+            <label for="checkin">Check-in Date:</label>
+            <input type="date" id="checkin" name="checkin" required>
+
+            <label for="checkout">Check-out Date:</label>
+            <input type="date" id="checkout" name="checkout" required>
+
+            <label for="guests">Number of Guests:</label>
+            <input type="number" id="guests" name="guests" min="1" required>
+
+            <button type="submit">Book Now</button>
+        </form>
+        <p id="booking-status"></p>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Rajasthan Hotel Booking. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

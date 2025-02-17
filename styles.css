@@ -1,0 +1,175 @@
+* Importing Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+/* General Page Styling */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #0f0b61;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* Header */
+header {
+    background-color: #00509d;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.logo {
+    width: 80px;
+    height: auto;
+}
+
+/* Navigation Menu */
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline;
+    margin: 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+    padding: 10px 15px;
+    transition: color 0.3s, background 0.3s;
+    border-radius: 5px;
+}
+
+nav ul li a:hover {
+    background-color: #ff9800;
+    color: #0f0b61;
+}
+
+/* Hero Section */
+.hero {
+    text-align: center;
+    padding: 100px 20px;
+    background: url('hero-image.jpg') no-repeat center center/cover;
+    color: rgb(95, 100, 6);
+    animation: fadeIn 1.5s ease-in-out;
+}
+
+.hero h2 {
+    font-size: 40px;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.hero button {
+    padding: 12px 25px;
+    font-size: 20px;
+    font-weight: 600;
+    background-color: #ff9800;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 8px;
+    transition: background 0.3s, transform 0.2s;
+}
+
+.hero button:hover {
+    background-color: #e68900;
+    transform: scale(1.05);
+}
+
+/* Hotel List */
+.hotel-list {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.hotel-card {
+    background: white;
+    margin: 20px;
+    padding: 20px;
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.3);
+ 
+    text-align: center;
+    border-radius: 8px;
+    color: black;
+    transition: transform 0.3s;
+}
+
+.hotel-card:hover {
+    transform: translateY(-5px);
+}
+
+.features {
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    margin-top: 50px;
+}
+
+.feature i {
+    font-size: 3rem;
+    color: gold;
+}
+
+/* Booking Form */
+.booking-container {
+    width: 50%;
+    margin: auto;
+    padding: 20px;
+    background: white;
+    text-align: center;
+    border-radius: 8px;
+}
+
+.booking-container input,
+.booking-container select,
+.booking-container button {
+    width: 80%;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 5px;
+}
+
+/* Footer */
+footer {
+    background-color: #00509d;
+    color: white;
+    text-align: center;
+    padding: 15px 0;
+    margin-top: 20px;
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(-20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    .booking-container {
+        width: 90%;
+    }
+
+    .hotel-list {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .hero {
+        padding: 70px 20px;
+    }
+
+    .hero h2 {
+        font-size: 30px;
+    }
+}

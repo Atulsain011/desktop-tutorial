@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - Rajasthan Hotel Booking</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Login to Your Account</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="hotels.html">HOTELS</a></li>
+                <li><a href="booking.html">BOOKING</a></li>
+                <li><a href="contact.html">CONTACT</a></li>
+                <li><a href="login.html">LOGIN</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="login-container">
+        <h2>Login</h2>
+        <form id="loginForm">
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" required>
+
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required>
+
+            <button type="submit">Login</button>
+        </form>
+        <p>Don't have an account? <a href="signup.html">Sign up here</a></p>
+        <p id="login-status"></p>
+    </section>
+
+    <footer>
+        
+        <p>&copy; 2025 Rajasthan Hotel Booking. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
